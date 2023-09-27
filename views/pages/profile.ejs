@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include('../partials/head') %>
+    </head>
+    
+    <body>
+        <header id="otherHeader">
+            <img id="logo" src="/images/logo.png">
+            <h1 id="logoTitle">What Yo Breathin?</h1>
+        </header>
+        <img id="background" src="/images/background.png">
+		<div id="loginForm">
+        <p>Username: <%= username %></p>
+		<p>Password: <%= password %></p>
+		<p>Marker Coordinates</p>
+		<table>
+			<tr>
+				<th>Latitude</th>
+				<th>Longitude</th>
+			</tr>
+			<% markers.forEach(function(marker) { %>
+			<tr>
+                    <td><%= marker.lat %></td><td><%= marker.lng %></td>
+			</tr>		
+                <% }); %>
+				
+		</table>
+        <form action="/logout"><button type="submit">Logout</button></form>
+        <form action="/dodeleteuser"><button type="submit">Delete account</button></form>
+		</div>
+    </body>
+</html>

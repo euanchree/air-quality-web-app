@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include('../partials/head') %>
+    </head>
+    <body>
+        <header id="loginHeader">
+            <img id="logo" src="/images/logo.png">
+            <h1 id="logoTitle">What Yo Breathin?</h1>
+        </header>
+        <img id="background" src="/images/background.png">
+        <div id="loginForm">
+	        <form action="/dologin" method="POST">
+		    <label>Username:</label> <input placeholder="Username" type="text" name="username">
+		    <label>Password:</label> <input placeholder="Password" type="password" name="password">
+		    <button type="submit">Login</button>
+		    </form>
+            <h2 id="signup">Sign up <a href="/signup">here</a></h2>
+            <p>Once logged in click the map to see the air polution in that area, you can save placed markers and load saved markers using the buttons on the bottom left of the screen.</p>
+            <p>To look at your account details log in and follow the link in the header, this will take you to a page where you can see your accounts information.</p>
+            <p>You can delete your account from our database by visting the profile page and selecting the delete account button.</p>
+        </div>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    </body>
+</html>

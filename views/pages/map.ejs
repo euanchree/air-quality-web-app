@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include('../partials/head') %>
+    </head>
+    
+    <body>
+        <header>
+            <%- include('../partials/header') %>
+        </header>
+        <!--Info appears when the ? is clicked and disappears when clicked again-->
+	    <section id="moreHelp">
+	 	    <section id="moreHelpContent">
+	 		    <p><b>Air Quality index values and their meanings</b></p>
+	 		    <table>
+	 			    <tr>
+	 			    	<th>Values</th>
+	 				    <th>Level of Concern</th>
+	 				    <th>Meaning</th>
+	 			    </tr>
+	 			    <tr>
+    	 				<td>0-50</td>
+	 				    <td>Good</td>
+	 				    <td>Air quality is satisfactory, and air pollution poses little or no risk.</td>
+	 			    </tr>
+	 			    <tr>
+    	 				<td>51-100</td>
+	 				    <td>Moderate</td>
+	 				    <td>Air quality is acceptable. However, there may be a risk for some people, particularly those who are unusually sensitive to air pollution.</td>
+	 			    </tr>
+	 			    <tr>
+    	 				<td>101-150</td>
+	 				    <td>Unhealthy for Sensitive Groups</td>
+	 				    <td>Members of sensitive groups may experience health effects. The general public is less likely to be affected.</td>
+	 			    </tr>
+	 			    <tr>
+    	 				<td>151-200</td>
+	 				    <td>Unhealthy</td>
+	 				    <td>Some members of the general public may experience health effects; members of sensitive groups may experience more serious health effects.</td>
+	 			    </tr>
+	 			    <tr>
+    	 				<td>301 and Higher</td>
+	 				    <td>Hazardous</td>
+	 				    <td>Health warning of emergency conditions: everyone is more likely to be affected.</td>
+	 			    </tr>
+	 		    </table>
+	 		    <p>To learn more about the US Air Quality Index click <a href="https://www.airnow.gov/aqi/aqi-basics/">here</a>
+	 	    </section>
+	    </section>
+
+        <!-- Section for holding the map -->
+        <section id="mapid"></section>	
+
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	    <script src="/js/main.js"></script>
+    </body>
+</html>

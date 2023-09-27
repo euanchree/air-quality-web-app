@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include('../partials/head') %>
+    </head>
+    <body>
+        <header id="signupHeader">
+            <img id="logo" src="/images/logo.png">
+            <h1 id="logoTitle">What Yo Breathin?</h1>
+        </header>
+        <img id="background" src="/images/background.png">
+        <div id="loginForm">
+	        <form action="/dosignup" method="POST">
+		    <label>Username:</label> <input placeholder="Username" type="text" name="username">
+		    <label>Password:</label> <input placeholder="Password" type="password" name="password">
+		    <button type="submit">Sign up</button>
+		    </form>
+        </div>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    </body>
+</html>

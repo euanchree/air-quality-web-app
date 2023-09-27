@@ -1,0 +1,115 @@
+body {
+    margin: auto;
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    text-align: center;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 11px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+#logo {
+    height: 100px;
+    padding: 10px;
+}
+
+#logoTitle {
+    font-size: 45px;
+    padding-left: 20px;
+}
+
+#subheader, #profileLink #signup{
+    font-size: 18px;
+    flex-basis: 100%;
+}
+
+#mapid, #background{
+    height: 100vh;
+}
+
+#loginForm{
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+form{
+    font-family: 'Nunito', sans-serif;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-size: 20px;
+}
+
+input{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+}
+
+b {
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+#moreHelp {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    left: 0;
+    right: 45px;
+    bottom: 17px;
+}
+  
+#moreHelpContent {
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 11px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 11px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 11px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 11px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+}
