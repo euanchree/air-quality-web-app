@@ -1,7 +1,3 @@
-//key for iqair 3540bf38-4239-4525-82ef-cfaeab698538
-//http://api.airvisual.com/v2/nearest_city?key=3540bf38-4239-4525-82ef-cfaeab698538
-//{{urlExternalAPI}}v2/nearest_city?lat={{LATITUDE}}&lon={{LONGITUDE}}&key={{YOUR_API_KEY}}
-
 $(function(){
     //Creating map
     var mymap = L.map('mapid', {zoomControl: false}).setView([54.237933,-2.36967],5); 
